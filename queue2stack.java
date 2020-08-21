@@ -24,20 +24,20 @@ public class Solution {
     }
 }
 
-class MyQueue<T> {
-    Stack<T> leftStack = new Stack<T>();
-    Stack<T> rightStack = new Stack<T>();
+class MyQueue<C> {
+    Stack<C> leftStack = new Stack<C>();
+    Stack<C> rightStack = new Stack<C>();
 
-    void enqueue(T item) {
+    void enqueue(C item) {
         leftStack.push(item);
     }
 
-    T dequeue() {
+    C dequeue() {
         transferIfNeeded();
         return rightStack.pop();
     }
 
-    T peek() {
+    C peek() {
         transferIfNeeded();
         return rightStack.peek();
     }
