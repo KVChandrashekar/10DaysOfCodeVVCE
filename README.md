@@ -1,2 +1,3 @@
 # 10DaysOfCodeVVCE
-10DaysOfCode VVCE Mysuru
+10DaysOfCode
+An online coding event conducted by VVCE college, Mysuru
